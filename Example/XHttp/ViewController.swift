@@ -23,6 +23,10 @@ class ViewController: UIViewController {
         }.catch { err in
             print(err)
         }
+        
+        testGet().then { res in
+            print(res.jsonString)
+        }
     }
     
     func post() {
