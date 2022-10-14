@@ -1,0 +1,27 @@
+PODS:
+  - PromisesObjC (2.1.1)
+  - PromisesSwift (2.1.1):
+    - PromisesObjC (= 2.1.1)
+  - XHttp (0.1.0):
+    - PromisesSwift
+
+DEPENDENCIES:
+  - XHttp (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - PromisesObjC
+    - PromisesSwift
+
+EXTERNAL SOURCES:
+  XHttp:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+  PromisesSwift: 99fddfe4a0ec88a56486644c0da106694c92a604
+  XHttp: b8cbc183d6c979bce77ea52e697f74f7c5759230
+
+PODFILE CHECKSUM: ef8585c8f0f35ec1fc6f21cc73f7bc132fe0d556
+
+COCOAPODS: 1.11.3

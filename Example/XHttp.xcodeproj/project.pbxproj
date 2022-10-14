@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A32969428F94C1A00A264A0 /* MyHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A32969328F94C1A00A264A0 /* MyHttp.swift */; };
+		0A32969628F94C1D00A264A0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A32969528F94C1D00A264A0 /* Service.swift */; };
 		4143D151EA5B655E17971CD0 /* Pods_XHttp_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766CD69C8CFF396BE42AC1B2 /* Pods_XHttp_Example.framework */; };
 		4A73E2C99C29EF2113145B6D /* Pods_XHttp_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520204492778B0A97188BE50 /* Pods_XHttp_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A32969328F94C1A00A264A0 /* MyHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHttp.swift; sourceTree = "<group>"; };
+		0A32969528F94C1D00A264A0 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		34B98FBE336F4A29AA2E6BCC /* Pods-XHttp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHttp_Example.release.xcconfig"; path = "Target Support Files/Pods-XHttp_Example/Pods-XHttp_Example.release.xcconfig"; sourceTree = "<group>"; };
 		520204492778B0A97188BE50 /* Pods_XHttp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHttp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* XHttp_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHttp_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,12 +44,12 @@
 		607FACE51AFB9204008FA782 /* XHttp_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XHttp_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6987DE32B4BF73B63B67E26D /* XHttp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XHttp.podspec; path = ../XHttp.podspec; sourceTree = "<group>"; };
+		6987DE32B4BF73B63B67E26D /* XHttp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XHttp.podspec; path = ../XHttp.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		766CD69C8CFF396BE42AC1B2 /* Pods_XHttp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHttp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2EB874C3ECFB63A8DE42A33 /* Pods-XHttp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHttp_Tests.release.xcconfig"; path = "Target Support Files/Pods-XHttp_Tests/Pods-XHttp_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C52C70B1DA5DB99F87675C27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C52C70B1DA5DB99F87675C27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E2CB2323B32B9617FCE224C8 /* Pods-XHttp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHttp_Example.debug.xcconfig"; path = "Target Support Files/Pods-XHttp_Example/Pods-XHttp_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F0130FD161A38125E8E8BFA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F0130FD161A38125E8E8BFA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F133B6C780651462CC7E5547 /* Pods-XHttp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHttp_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XHttp_Tests/Pods-XHttp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +99,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				0A32969328F94C1A00A264A0 /* MyHttp.swift */,
+				0A32969528F94C1D00A264A0 /* Service.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -147,7 +153,6 @@
 				F133B6C780651462CC7E5547 /* Pods-XHttp_Tests.debug.xcconfig */,
 				A2EB874C3ECFB63A8DE42A33 /* Pods-XHttp_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +232,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +319,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-XHttp_Example/Pods-XHttp_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
 				"${BUILT_PRODUCTS_DIR}/XHttp/XHttp.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XHttp.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				0A32969628F94C1D00A264A0 /* Service.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				0A32969428F94C1A00A264A0 /* MyHttp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -479,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XHttp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XHttp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

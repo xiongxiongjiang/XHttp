@@ -7,17 +7,38 @@
 //
 
 import UIKit
+import XHttp
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view.
+         post()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func get() {
+        testGet(query: ["nickname": "Bob"]).then { res in
+            print("jsonData:\n", res.jsonString)
+        }.catch { err in
+            print(err)
+        }
+    }
+    
+    func post() {
+        testPost(query: ["age": 3, "hair": "black"], data: ["nickname": "Bob"]).then { res in
+            print("jsonData:\n", res.jsonString)
+        }.catch { err in
+            print(err)
+        }
+    }
+
+    func put() {
+        testPut().then { res in
+            print("jsonData:\n", res.jsonString)
+        }.catch { err in
+            print(err)
+        }
     }
 
 }

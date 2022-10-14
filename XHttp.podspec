@@ -9,7 +9,8 @@
 Pod::Spec.new do |s|
   s.name             = 'XHttp'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of XHttp.'
+  s.summary          = 'A network framework'
+  s.swift_version    = '5.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,15 +18,13 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'A network framework'
 
-  s.homepage         = 'https://github.com/16330990/XHttp'
+  s.homepage         = 'https://github.com/xiongxiongjiang/XHttp'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '16330990' => 'xurong@bittarn.com' }
-  s.source           = { :git => 'https://github.com/16330990/XHttp.git', :tag => s.version.to_s }
+  s.author           = { '16330990' => 'xurong@xurong.tech' }
+  s.source           = { :git => 'https://github.com/xiongxiongjiang/XHttp.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
@@ -39,4 +38,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'PromisesSwift'
 end
