@@ -1,15 +1,16 @@
 # XHttp
 
-[![CI Status](https://img.shields.io/travis/16330990/XHttp.svg?style=flat)](https://travis-ci.org/16330990/XHttp)
-[![Version](https://img.shields.io/cocoapods/v/XHttp.svg?style=flat)](https://cocoapods.org/pods/XHttp)
-[![License](https://img.shields.io/cocoapods/l/XHttp.svg?style=flat)](https://cocoapods.org/pods/XHttp)
-[![Platform](https://img.shields.io/cocoapods/p/XHttp.svg?style=flat)](https://cocoapods.org/pods/XHttp)
+[![Swift](https://img.shields.io/badge/Swift-5.0%2B-orange)](https://cocoapods.org/pods/XHttp)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey)](https://cocoapods.org/pods/XHttp)
+[![Platform](https://img.shields.io/badge/Platforms-iOS-yellowgreen?style=flat-square)](https://cocoapods.org/pods/XHttp)
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+PromisesSwift
 
 ## Installation
 
@@ -22,7 +23,7 @@ pod 'XHttp'
 
 ## Author
 
-16330990, xurong@bittarn.com
+xurong, xurong@xurong.tech
 
 ## License
 
