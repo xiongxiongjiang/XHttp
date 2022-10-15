@@ -26,6 +26,7 @@ open class XHttp {
             var req = URLRequest.init(url: URL(string: url)!)
             req.allHTTPHeaderFields = self.config.headers
             req.httpMethod = method.rawValue
+            req.timeoutInterval = self.config.timeout
             let task = URLSession.shared.dataTask(with: req) { data, response, error in
                 guard error == nil, let jsonData = data else {
                     reject(error!)
