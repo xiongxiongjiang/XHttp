@@ -25,12 +25,18 @@ pod 'XHttp'
 
 ## Feature
 
-- [x] set baseUrl
-- [x] set headers
-- [x] set timeout
-- [x] convenience http method
-- [x] set query by String or Dictionary
-- [x] set http body
+- [x] Set base url
+- [x] Set headers
+- [x] Set timeout
+- [x] Set query by String or Dictionary
+- [x] Set http body
+
+- [x] Chainable request
+- [x] Convenience http method
+- [x] Validate url
+- [ ] Retry requset
+- [ ] Cancel request
+- [ ] Download
 
 ## Usage
 

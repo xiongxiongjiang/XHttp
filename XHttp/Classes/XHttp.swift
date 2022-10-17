@@ -21,9 +21,14 @@ open class XHttp {
                         data: [String: Any]? = [:],
                         query: Any? = nil
     ) -> Promise<XHttpRespone> {
-        let url = makeUrl(path: path, config: self.config, query: query)
+        let urlString = makeUrl(path: path, config: self.config, query: query)
         return Promise { fulfill, reject in
-            var req = URLRequest.init(url: URL(string: url)!)
+            guard let url = URL(string: "\(urlString)") else {
+                let error = XError(desc: "Invalid URL: \(urlString)")
+                reject(error)
+                return
+            }
+            var req = URLRequest.init(url: url)
             req.allHTTPHeaderFields = self.config.headers
             req.httpMethod = method.rawValue
             req.timeoutInterval = self.config.timeout

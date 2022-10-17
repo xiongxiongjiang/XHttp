@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  XHttp
 //
-//  Created by 16330990 on 10/14/2022.
-//  Copyright (c) 2022 16330990. All rights reserved.
+//  Created by xurong on 10/14/2022.
+//  Copyright (c) 2022 xurong. All rights reserved.
 //
 
 import UIKit
