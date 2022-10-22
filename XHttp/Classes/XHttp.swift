@@ -19,10 +19,11 @@ open class XHttp {
     public func request(_ path: String,
                         method: HttpMethod = .get,
                         data: [String: Any]? = [:],
-                        query: Any? = nil
+                        query: Any? = nil,
+                        on queue: DispatchQueue = .main
     ) -> Promise<XHttpRespone> {
         let urlString = makeUrl(path: path, config: self.config, query: query)
-        return Promise { fulfill, reject in
+        return Promise(on: queue) { fulfill, reject in
             guard let url = URL(string: "\(urlString)") else {
                 let error = XError(desc: "Invalid URL: \(urlString)")
                 reject(error)
@@ -33,7 +34,7 @@ open class XHttp {
             req.httpMethod = method.rawValue
             req.timeoutInterval = self.config.timeout
             let task = URLSession.shared.dataTask(with: req) { data, response, error in
-                guard error == nil, let jsonData = data else {
+                guard error == nil, let data = data else {
                     reject(error!)
                     return
                 }
@@ -43,7 +44,7 @@ open class XHttp {
                     statusCode = response.statusCode
                     headers = response.allHeaderFields
                 }
-                let dict = jsonData.dictionary
+                let dict = data.dictionary
                 let json = dict.jsonString
                 let xRespone = XHttpRespone()
                 xRespone.data = dict
